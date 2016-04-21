@@ -18,7 +18,7 @@ public class AnimController : MonoBehaviour {
     {
 
         //walk and idle back
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             anim.SetBool("back", true);
             anim.SetBool("right", false);
@@ -27,27 +27,13 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("walk", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            anim.SetBool("walk", false);
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow))
-        { 
-            anim.SetBool("back", true);
-            anim.SetBool("right", false);
-            anim.SetBool("front", false);
-            anim.SetBool("left", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         {
             anim.SetBool("walk", false);
         }
 
         //walk and idle left
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             anim.SetBool("left", true);
             anim.SetBool("right", false);
@@ -56,27 +42,13 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("walk", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            anim.SetBool("walk", false);
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            anim.SetBool("left", true);
-            anim.SetBool("right", false);
-            anim.SetBool("front", false);
-            anim.SetBool("back", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             anim.SetBool("walk", false);
         }
 
         //walk and idle front
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             anim.SetBool("front", true);
             anim.SetBool("back", false);
@@ -85,27 +57,13 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("walk", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            anim.SetBool("walk", false);
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            anim.SetBool("front", true);
-            anim.SetBool("back", false);
-            anim.SetBool("left", false);
-            anim.SetBool("right", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (Input.GetKeyUp(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             anim.SetBool("walk", false);
         }
 
         //walk and idle right
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             anim.SetBool("right", true);
             anim.SetBool("left", false);
@@ -114,21 +72,7 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("walk", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            anim.SetBool("walk", false);
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            anim.SetBool("right", true);
-            anim.SetBool("left", false);
-            anim.SetBool("front", false);
-            anim.SetBool("back", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             anim.SetBool("walk", false);
         }
