@@ -5,6 +5,12 @@ public class PlayerController : MonoBehaviour {
 
     private Vector2 pos;
     private bool isMoving = false;
+    public bool wallLeft = false;
+    public bool wallRight = false;
+    public bool wallUp = false;
+    public bool wallDown = false;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +35,7 @@ public class PlayerController : MonoBehaviour {
             pos += Vector2.right;
             isMoving = true;
         }
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && wallLeft == false)
         {
             pos -= Vector2.right;
             isMoving = true;

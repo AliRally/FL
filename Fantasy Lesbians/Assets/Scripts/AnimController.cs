@@ -24,12 +24,10 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("right", false);
             anim.SetBool("front", false);
             anim.SetBool("left", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            anim.SetBool("walk", false);
+            if (GetComponent<GridMove>().isMoving == true)
+            {
+                anim.SetBool("walk", true);
+            }
         }
 
         //walk and idle left
@@ -39,12 +37,10 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("right", false);
             anim.SetBool("front", false);
             anim.SetBool("back", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            anim.SetBool("walk", false);
+            if (GetComponent<GridMove>().isMoving == true)
+            {
+                anim.SetBool("walk", true);
+            }
         }
 
         //walk and idle front
@@ -54,12 +50,10 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("back", false);
             anim.SetBool("left", false);
             anim.SetBool("right", false);
-            anim.SetBool("walk", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            anim.SetBool("walk", false);
+            if (GetComponent<GridMove>().isMoving == true)
+            {
+                anim.SetBool("walk", true);
+            }
         }
 
         //walk and idle right
@@ -69,10 +63,14 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("left", false);
             anim.SetBool("front", false);
             anim.SetBool("back", false);
-            anim.SetBool("walk", true);
+            if (GetComponent<GridMove>().isMoving == true)
+            {
+                anim.SetBool("walk", true);
+            }
         }
 
-        if (Input.GetKeyUp(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        //end walk
+        if (GetComponent<GridMove>().isMoving == false)
         {
             anim.SetBool("walk", false);
         }

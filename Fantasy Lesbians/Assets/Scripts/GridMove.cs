@@ -11,7 +11,7 @@ public class GridMove : MonoBehaviour {
     private bool allowDiagonals = false;
     private bool correctDiagonalSpeed = true;
     private Vector2 input;
-    private bool isMoving = false;
+    public bool isMoving = false;
     private Vector3 startPosition, endPosition;
     private float t;
     private float factor;
