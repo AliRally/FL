@@ -1,15 +1,13 @@
 fileFormatVersion: 2
-guid: ed4a41c6f12d625448624c28593d3dd6
-timeCreated: 1461459003
+guid: 80ff3c9c668500148a61efcb349d1448
+timeCreated: 1461459047
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tiles_set1_0
-    21300002: tiles_set1_1
-    21300004: tiles_set1_2
-    21300006: tiles_set1_3
-    21300008: tiles_set1_4
-    21300010: tiles_set1_5
+    21300000: walls_set2_0
+    21300002: walls_set2_1
+    21300004: walls_set2_2
+    21300006: walls_set2_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,61 +54,41 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: tiles_set1_0
+    - name: walls_set2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_1
+    - name: walls_set2_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_2
+    - name: walls_set2_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_3
+    - name: walls_set2_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0

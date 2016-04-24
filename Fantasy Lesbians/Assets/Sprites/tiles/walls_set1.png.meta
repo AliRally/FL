@@ -1,15 +1,21 @@
 fileFormatVersion: 2
-guid: ed4a41c6f12d625448624c28593d3dd6
-timeCreated: 1461459003
+guid: 757f2aa8c99e6104996660691466b4c5
+timeCreated: 1461459027
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tiles_set1_0
-    21300002: tiles_set1_1
-    21300004: tiles_set1_2
-    21300006: tiles_set1_3
-    21300008: tiles_set1_4
-    21300010: tiles_set1_5
+    21300000: walls_set1_0
+    21300002: walls_set1_1
+    21300004: walls_set1_2
+    21300006: walls_set1_3
+    21300008: walls_set1_4
+    21300010: walls_set1_5
+    21300012: walls_set1_6
+    21300014: walls_set1_7
+    21300016: walls_set1_8
+    21300018: walls_set1_9
+    21300020: walls_set1_10
+    21300022: walls_set1_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,7 +62,67 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: tiles_set1_0
+    - name: walls_set1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walls_set1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walls_set1_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walls_set1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walls_set1_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walls_set1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walls_set1_6
       rect:
         serializedVersion: 2
         x: 0
@@ -66,7 +132,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_1
+    - name: walls_set1_7
       rect:
         serializedVersion: 2
         x: 64
@@ -76,7 +142,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_2
+    - name: walls_set1_8
       rect:
         serializedVersion: 2
         x: 128
@@ -86,7 +152,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_3
+    - name: walls_set1_9
       rect:
         serializedVersion: 2
         x: 192
@@ -96,7 +162,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_4
+    - name: walls_set1_10
       rect:
         serializedVersion: 2
         x: 256
@@ -106,7 +172,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiles_set1_5
+    - name: walls_set1_11
       rect:
         serializedVersion: 2
         x: 320

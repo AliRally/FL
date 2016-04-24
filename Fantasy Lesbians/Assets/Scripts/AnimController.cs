@@ -94,7 +94,7 @@ public class AnimController : MonoBehaviour {
 
         if (anim.GetBool("occ") == true)
         {
-            if (occTime >= 1f)
+            if (occTime >= 2f)
             {
                 anim.SetBool("occ", false);
                 tempTime = 0;

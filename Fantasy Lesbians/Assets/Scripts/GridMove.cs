@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GridMove : MonoBehaviour {
 
-    private float moveSpeed = 3f;
-    private float gridSize = 1.5f;
+    private float moveSpeed = 128f;
+    private float gridSize = 64f;
     private enum Orientation { Horizontal, Vertical };
 
     private Orientation gridOrientation = Orientation.Horizontal;
