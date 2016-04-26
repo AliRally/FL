@@ -46,18 +46,18 @@ public class GridMove : MonoBehaviour
 
     public IEnumerator move(Transform transform)
     {
-            isMoving = true;
-            startPosition = transform.position;
+            //isMoving = true;
+            //startPosition = transform.position;
             t = 0;
 
-            if (gridOrientation == Orientation.Horizontal)
-            {
-                endPosition = new Vector3(startPosition.x + System.Math.Sign(input.x) * gridSize, startPosition.y + System.Math.Sign(input.y) * gridSize, startPosition.z);
-            }
-            else
-            {
-                endPosition = new Vector3(startPosition.x + System.Math.Sign(input.x) * gridSize, startPosition.y + System.Math.Sign(input.y) * gridSize, startPosition.z);
-            }
+            //if (gridOrientation == Orientation.Horizontal)
+            //{
+            //    endPosition = new Vector3(startPosition.x + System.Math.Sign(input.x) * gridSize, startPosition.y + System.Math.Sign(input.y) * gridSize, startPosition.z);
+            //}
+            //else
+            //{
+            //    endPosition = new Vector3(startPosition.x + System.Math.Sign(input.x) * gridSize, startPosition.y + System.Math.Sign(input.y) * gridSize, startPosition.z);
+            //}
 
             if (allowDiagonals && correctDiagonalSpeed && input.x != 0 && input.y != 0)
             {

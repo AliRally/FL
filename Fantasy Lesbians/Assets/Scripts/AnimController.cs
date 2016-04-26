@@ -83,7 +83,7 @@ public class AnimController : MonoBehaviour {
         if (tempTime >= 10f && anim.GetBool("occ") == false)
         {
             var number = Random.Range(1,3);
-            Debug.Log(number);
+            //Debug.Log(number);
             if (number == 1)
             {
                 anim.SetBool("occ", true);

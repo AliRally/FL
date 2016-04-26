@@ -46,9 +46,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimController.cs" />
+     <Compile Include="Assets\Scripts\Collider.cs" />
      <Compile Include="Assets\Scripts\GridBehavior.cs" />
      <Compile Include="Assets\Scripts\GridMove.cs" />
-     <Compile Include="Assets\Scripts\Movement_noLeft.cs" />
      <Compile Include="Assets\Scripts\PixelPerfect.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RandomTile.cs" />
