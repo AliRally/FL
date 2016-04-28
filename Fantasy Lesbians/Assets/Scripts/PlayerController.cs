@@ -21,57 +21,55 @@ public class PlayerController : MonoBehaviour
     public bool wallUp = false;
     public bool wallDown = false;
 
-    private float factor, t;
+    private float factor;
+    public float t;
 
     GridMove GM = new GridMove();
 
 	
-	void Start () 
-    {
-        pos = transform.position;
-        lerp = false;
-        
-	}
+    //void Start () 
+    //{
+    //    pos = transform.position;
+    //}
 	
 	void Update () 
     {
-        if (lerp)
-        {
-            StartCoroutine(move(transform));
-        }
-
+        
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) && wallRight == false)
         {
             pos = transform.position;
             endpos = new Vector3(pos.x += gridSize, pos.y, 0);
-            lerp = true;
+            StartCoroutine(move(transform));
             input.y = 0;
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && wallLeft == false)
         {
             pos = transform.position;
             endpos = new Vector3(pos.x -= gridSize, pos.y, 0);
-            lerp = true;
+            StartCoroutine(move(transform));
             input.y = 0;
         }
         else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && wallUp == false)
         {
             pos = transform.position;
             endpos = new Vector3(pos.x, pos.y += gridSize, 0);
-            lerp = true;
+            StartCoroutine(move(transform));
             input.x = 0;
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow) && wallDown == false)
         {
             pos = transform.position;
             endpos = new Vector3(pos.x, pos.y -= gridSize, 0);
-            lerp = true;
+            StartCoroutine(move(transform));
             input.x = 0;
         }
+
 	}
 
     public IEnumerator move(Transform transform)
     {
+        Debug.Log("zhu li does the thing");
+
         isMoving = true;
         t = 0;
 
@@ -86,12 +84,14 @@ public class PlayerController : MonoBehaviour
 
         while (t < 1f)
         {
-            t += Time.deltaTime * (moveSpeed / gridSize) * factor;
+            Debug.Log("we do the lerp");
+            t += Time.deltaTime * (moveSpeed / gridSize) * factor; Debug.Log(t);
             transform.position = Vector3.Lerp(pos, endpos, t);
             yield return null;
         }
 
         isMoving = false;
+        lerp = false;
         yield return 0;
     }
 }
