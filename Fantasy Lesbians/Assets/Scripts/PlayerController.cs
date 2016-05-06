@@ -27,10 +27,10 @@ public class PlayerController : MonoBehaviour
     GridMove GM = new GridMove();
 
 	
-    //void Start () 
-    //{
-    //    pos = transform.position;
-    //}
+    void Start () 
+    {
+        pos = transform.position;
+    }
 	
 	void Update () 
     {
@@ -63,7 +63,6 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(move(transform));
             input.x = 0;
         }
-
 	}
 
     public IEnumerator move(Transform transform)
@@ -85,7 +84,7 @@ public class PlayerController : MonoBehaviour
         while (t < 1f)
         {
             Debug.Log("we do the lerp");
-            t += Time.deltaTime * (moveSpeed / gridSize) * factor; Debug.Log(t);
+            t += Time.deltaTime * (moveSpeed / gridSize) * factor; 
             transform.position = Vector3.Lerp(pos, endpos, t);
             yield return null;
         }

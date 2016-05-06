@@ -11,20 +11,20 @@ public class Collider : MonoBehaviour
         if (col.CompareTag("left wall"))
         {
             Debug.Log("i see a little sillouetto of a man");
-            GetComponent<PlayerController>().wallLeft = true;
+            GetComponent<GridMove>().wallLeft = true;
             Debug.Log("left");
         }
         else if (col.CompareTag("right wall"))
         {
-            GetComponent<PlayerController>().wallRight = true;
+            GetComponent<GridMove>().wallRight = true;
         }
         else if (col.CompareTag("up wall"))
         {
-            GetComponent<PlayerController>().wallUp = true;
+            GetComponent<GridMove>().wallUp = true;
         }
         else if (col.CompareTag("down wall"))
         {
-            GetComponent<PlayerController>().wallDown = true;
+            GetComponent<GridMove>().wallDown = true;
         }
     }
 
@@ -32,19 +32,19 @@ public class Collider : MonoBehaviour
     {
         if (col.CompareTag("left wall"))
         {
-            GetComponent<PlayerController>().wallLeft = false;
+            GetComponent<GridMove>().wallLeft = false;
         }
         else if (col.CompareTag("right wall"))
         {
-            GetComponent<PlayerController>().wallRight = false;
+            GetComponent<GridMove>().wallRight = false;
         }
         else if (col.CompareTag("up wall"))
         {
-            GetComponent<PlayerController>().wallUp = false;
+            GetComponent<GridMove>().wallUp = false;
         }
         else if (col.CompareTag("down wall"))
         {
-            GetComponent<PlayerController>().wallDown = false;
+            GetComponent<GridMove>().wallDown = false;
         }
     }
 

@@ -6,16 +6,17 @@ public class AnimController : MonoBehaviour {
     public Animator anim;
     float tempTime = 0;
     float occTime = 0;
-    float oldPosX;
-    float oldPosY;
+    //float oldPosX;
+    //float oldPosY;
+    private SpriteRenderer render;
 
 	// Use this for initialization
 	void Start () 
     {
         anim = GetComponent<Animator>();
 
-        oldPosX = transform.position.x;
-        oldPosY = transform.position.y;
+        //oldPosX = transform.position.x;
+        //oldPosY = transform.position.y;
 	}
 	
 	// Update is called once per frame
@@ -75,6 +76,14 @@ public class AnimController : MonoBehaviour {
             //oldPosY = transform.position.y;
 
         //}
+
+        //attack
+
+        if (Input.GetKey(KeyCode.Space))
+            anim.SetBool("attack", true);
+
+        if (Input.GetKeyUp(KeyCode.Space))
+            anim.SetBool("attack", false);
 
         //controll occasional
 
