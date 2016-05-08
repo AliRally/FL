@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\PixelPerfect.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RandomTile.cs" />
+     <Compile Include="Assets\Scripts\SortingOrder.cs" />
      <Compile Include="Assets\Scripts\atkCol.cs" />
      <Compile Include="Assets\Scripts\enemyMove.cs" />
  <Reference Include="UnityEngine.UI">
