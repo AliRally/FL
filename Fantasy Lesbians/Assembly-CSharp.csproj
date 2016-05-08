@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Char Classes\pawnClass.cs" />
      <Compile Include="Assets\Scripts\Collider.cs" />
      <Compile Include="Assets\Scripts\EnemyCollision.cs" />
+     <Compile Include="Assets\Scripts\GUI\start.cs" />
      <Compile Include="Assets\Scripts\GridBehavior.cs" />
      <Compile Include="Assets\Scripts\GridMove.cs" />
      <Compile Include="Assets\Scripts\PixelPerfect.cs" />
