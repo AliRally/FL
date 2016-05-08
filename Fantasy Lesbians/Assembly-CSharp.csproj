@@ -46,12 +46,21 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimController.cs" />
+     <Compile Include="Assets\Scripts\BasicCombat.cs" />
+     <Compile Include="Assets\Scripts\Char Classes\EnemyClass.cs" />
+     <Compile Include="Assets\Scripts\Char Classes\KennedyClass.cs" />
+     <Compile Include="Assets\Scripts\Char Classes\PlayerClass.cs" />
+     <Compile Include="Assets\Scripts\Char Classes\archerClass.cs" />
+     <Compile Include="Assets\Scripts\Char Classes\pawnClass.cs" />
      <Compile Include="Assets\Scripts\Collider.cs" />
+     <Compile Include="Assets\Scripts\EnemyCollision.cs" />
      <Compile Include="Assets\Scripts\GridBehavior.cs" />
      <Compile Include="Assets\Scripts\GridMove.cs" />
      <Compile Include="Assets\Scripts\PixelPerfect.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RandomTile.cs" />
+     <Compile Include="Assets\Scripts\atkCol.cs" />
+     <Compile Include="Assets\Scripts\enemyMove.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
